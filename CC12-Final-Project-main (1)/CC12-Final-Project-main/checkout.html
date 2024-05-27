@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Restaurantdesign.css">
+  <title>Checkout</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Checkout</h1>
+    <p>Total: ₱<span id="total">0.00</span></p>
+    <form id="payment-form" action="processPayment.jsp" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="payment-type">Payment Type:</label>
+      <select id="payment-type" name="payment-type" required>
+        <option value="cash">Cash</option>
+        <option value="credit">Credit</option>
+      </select>
+      <br>
+      <button type="submit">Pay</button>
+    </form>
+  </div>
+  <script src="Restaurantdesign.js"></script>
+  <script>
+    // Get the total price from the query string
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const total = urlSearchParams.get('total');
+  
+    // Display the total price
+    const totalElement = document.getElementById("total");
+    totalElement.textContent = total ? total : "0.00";
+  </script>
+</body>
+</html>

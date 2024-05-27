@@ -1,0 +1,240 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-list {
+    float: left;
+    width: 50%;
+}
+
+.product-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-list ul li {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.product-list ul li img {
+    background-color: #f2f2f2;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart {
+    float: right;
+    width: 40%;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart ul li {
+    margin-bottom: 10px;
+}
+
+#total {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#cancel-order {
+    margin-top: 20px;
+}
+
+#cancel-order button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#cancel-order button:hover {
+    background-color: #da190b;
+}
+
+#checkout {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#checkout:hover {
+    background-color: #45a049;
+}
+
+/* Remaining Global Styles from the first CSS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.nav {
+    background-color: #444;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #ccc;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 10px;
+    width: calc(25% - 20px);
+}
+
+.menu-item:hover {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.menu-item-info {
+    padding: 10px;
+}
+
+.menu-item-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu-item-price {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-item-description {
+    font-size: 14px;
+    color: #999;
+}
+
+.order-summary {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 10px;
+    width: calc(25% - 20px);
+}
+
+.order-summary-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.order-summary-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-summary-item:last-child {
+    border-bottom: none;
+}
+
+.order-summary-item-name {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.order-summary-item-price {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.order-summary-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
